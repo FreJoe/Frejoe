@@ -43,13 +43,12 @@ MySQL version is: Ver 15.1 Distrib 5.5.65-MariaDB, for Linux (x86_64) using read
 
 
 
-------
+## Building:
 
 Now we can start building the package: 
 
 
-Build zstack.war:
----------------
+### **Build zstack.war:**
 
     ant -propertyfile build.oss.properties \
         -buildfile build.oss.xml \
@@ -59,8 +58,7 @@ Build zstack.war:
 
 
 
-Build all-in-one installer:
---------------------------
+### Build all-in-one installer:
 
 ```
 cd /your/path/to/zstack-repos;
@@ -95,23 +93,23 @@ The following instructions has dependency on repositories not publicly released 
 #### Build all-in-one package with special build name, e.g. rc1 :
 #ant -Dzstack_build_root=/root/zstackorg/ -Dbuild.num=rc1 all-in-one
 
-**Build all-in-one package with special build name, e.g. rc1 :**
+#### Build all-in-one package with special build name, e.g. rc1 :
 
 #ant -Dzstack_build_root=/root/zstackorg/ -Dbuild.num=rc1 -Dbin.version=1.0.1-rc1 all-in-one
 
-#### **Build all-in-one offline binary installer for CentOS6 (need to install figlet):**
+#### Build all-in-one offline binary installer for CentOS6 (need to install figlet):
 
 #ant -Dzstack_build_root=/root/zstackorg/ offline-centos6
 
-#### **Build all-in-one offline binary installer for CentOS7 (need to install figlet):**
+#### Build all-in-one offline binary installer for CentOS7 (need to install figlet):
 #ant -Dzstack_build_root=/root/zstackorg/ offline-centos7
 
 #### Build all-in-one offline binary installer for CentOS6 and CentOS7 (need to install figlet):
 #ant -Dzstack_build_root=/root/zstackorg/ offline-centos-all
 
-### Build all-in-one offline binary installer for CentOS6 and CentOS7, with specific branch version:
+#### Build all-in-one offline binary installer for CentOS6 and CentOS7, with specific branch version:
 
 #ant -Dzstack_build_root=/root/zstackorg/ offline-centos-all
 
-### **Build all-in-one package with 1.2.x branch**
+#### Build all-in-one package with 1.2.x branch
 #ant -Dzstack_build_root=/root/zstackorg/ -Dzstack.build_version=1.2.x -Dzstack-utiltiy.build_version=1.2.x all-in-one
