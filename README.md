@@ -2,7 +2,7 @@ Preparation:
 -------------
 The following dependencies and installation packages need to be installed before building:
 
-**Ant**, **Golang**, **Apache-Maven** and **Python2** **need to be installed.**
+**Ant, Golang, Apache-Maven and Python2 need to be installed.**
 
 ```
 # other necessary dependencies: 
@@ -58,7 +58,7 @@ Now we can start building the package:
 
 
 
-### Build all-in-one installer:
+### **Build all-in-one installer:**
 
 ```
 cd /your/path/to/zstack-repos;
@@ -74,7 +74,7 @@ wget -c https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.57/bin/apache-tomca
         -Dbuild.zstack.ui.war=false \
         all-in-one
 
-
+ &nbsp; 
 
 
 
